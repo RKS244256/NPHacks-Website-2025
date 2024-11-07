@@ -1,0 +1,49 @@
+
+#donate, #login{
+    float: right;
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+}
+
+#header{
+display: flex;
+justify-content: flex-end; /* Align buttons to the right */
+gap: 50px; /* Add space between buttons */
+}
+
+
+
+
+#main{
+    background-color: orange;
+    height: 1000px;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+}
+
+#mainWelcome{
+    text-align: center;
+    padding-top: 125px;
+}
+
+#secondary{
+    background-color: greenyellow;
+    height: 1000px;
+    width: 100%;
+    padding: 20px;
+    
+}
+
+#faqHeader{
+    text-align: center;
+}
+
+#body{
+    margin: 0;
+}

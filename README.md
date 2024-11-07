@@ -1,12 +1,12 @@
 #Todo
 ## Sections
-- [] Landing Page
-- [] Schedule
-- [] FAQ
-- [] Sponsors
+- [ ] Landing Page
+- [ ] Schedule
+- [ ] FAQ
+- [ ] Sponsors
 
 ## General
-- [] CSS
-- [] Registration Form
-- [] Donations?
-- [] Sponsor Package Download (In Sponsor Section)
+- [ ] CSS
+- [ ] Registration Form
+- [ ] Donations?
+- [ ] Sponsor Package Download (In Sponsor Section)

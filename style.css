@@ -1,8 +1,9 @@
 
 body{
-	background-color: #000000;
-	margin: 0;
-	padding: 0;
+    background: rgb(4,0,66);
+    background: radial-gradient(circle, rgba(4,0,66,1) 0%, rgba(22,24,62,1) 35%, rgba(0,114,138,1) 100%);
+    margin: 0;
+    padding: 0;
 }
 
 #donate, #login{
@@ -14,6 +15,7 @@ body{
     border: none;
     border-radius: 20px;
     text-size: 5px;
+    opacity: unset;
 }
 
 .header{
@@ -22,6 +24,7 @@ body{
     display: flex;
     justify-content: flex-end; /* Align buttons to the right */
     gap: 20px; /* Add space between buttons */
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -35,19 +38,14 @@ body{
     width: 100%;
 }
 
-#mainWelcome{
+.title{
     text-align: center;
-    padding-top: 125px;
 }
 
 .FAQ{
     background-color: #3c240e;
     width: 100%;
     
-}
-
-#faqHeader{
-    text-align: center;
 }
 
 #body{

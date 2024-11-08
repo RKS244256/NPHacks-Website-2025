@@ -1,12 +1,12 @@
 # Todo
 ## Sections
-- [ ] Landing Page - Landing Page
-- [ ] Schedule - Yashvi
-- [ ] FAQ - Saransh
-- [ ] Sponsors - Gurshaan
+- [ ] Landing Page
+- [ ] Schedule
+- [ ] FAQ
+- [ ] Sponsors
 
 ## General
 - [ ] CSS
-- [ ] Registration Form - Ryan & Abdullah
-- [ ] Donations? - Ryan & Abdullah
-- [ ] Sponsor Package Download (In Sponsor Section) - Ryan
+- [ ] Registration Form
+- [ ] Donations?
+- [ ] Sponsor Package Download (In Sponsor Section)

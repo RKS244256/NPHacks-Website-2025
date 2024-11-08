@@ -52,7 +52,7 @@ body{
     margin: 0;
 }
 
-div {
+.sponsor_divs {
     margin: 20px auto;
     max-width: 1200px;
     padding: 20px;

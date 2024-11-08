@@ -1,4 +1,3 @@
-
 body{
     background: rgb(4,0,66);
     background: radial-gradient(circle, rgba(4,0,66,1) 0%, rgba(22,24,62,1) 35%, rgba(0,114,138,1) 100%);
@@ -78,4 +77,27 @@ body{
 .large-button:hover {
     background-color: #42a7f5;
     transform: scale(1.05);
+}
+
+.question {
+    background-color: #3c240e;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.answer {
+    max-height: 0;
+    padding: 0 10px;
+    background-color: #3c240e;
+    border-bottom: 1px solid;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    color: white;
+}
+
+.answer.open {
+    max-height: 500px;
+    padding: 10px;
+    color: white;
 }

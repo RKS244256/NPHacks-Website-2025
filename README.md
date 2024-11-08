@@ -1,5 +1,6 @@
 # Todo
 ## Sections
+
 - [ ] Landing Page - Pranay
 - [ ] Schedule - Yashvi
 - [ ] FAQ - Saransh
@@ -7,6 +8,6 @@
 
 ## General
 - [ ] CSS
-- [ ] Registration Form - Ryan & Abdullah
-- [ ] Donations? - Ryan & Abdullah
-- [ ] Sponsor Package Download (In Sponsor Section) - Ryan
+- [ ] Registration Form
+- [ ] Donations?
+- [ ] Sponsor Package Download (In Sponsor Section)

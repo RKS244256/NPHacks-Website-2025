@@ -1,24 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>NPHacks 2025</title>
-	<link rel="stylesheet" href="style.css">
+    <title>NPHacks 2025</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script src="script.js"></script>
     <div class="main">
         <div class="header" id="header">
             <a href="login.html">
                 <button id="login">Login</button>
             </a>
+            
             <a href="donate.html">
                 <button id="donate">Donate</button>
             </a>
         </div>
+        
         <div class="landing">
             <h1 class="title">NPHacks 2025</h1>
         </div>
         <div class="FAQ">
             <h1 class="title">FAQs</h1>
+
+            <!--FAQ 1-->
+            <div class="question" onclick="toggleAnswer(this)">
+                What is a hackathon?
+            </div>
+            
+            <div class="answer">
+                We at NPHacks like to believe that a hack-a-thon is very much like an invent-a-thon where like-minded individuals with various backgrounds and skill sets come together for a weekend to “invent” something from the ground up. The only thing limiting what you build is your creativity — we’ll provide the rest.
+            </div>
+
+            <!--FAQ 2-->
+            <div class="question" onclick="toggleAnswer(this)">
+                Who can attend?
+            </div>
+
+            <div class="answer">
+                Any high school student can attend! <strong>Please note that all attendees are responsible for their own transportation to NPHacks!</strong>
+            </div>
+
+
+            <!--FAQ 3-->
+            <div class="question" onclick="toggleAnswer(this)">
+                Do I have to pay?
+            </div>
+            
+            <div class="answer">
+                VikingHacks is completely free thanks to our sponsors!
+            </div>
+
+            <!--FAQ 4-->
+            <div class="question" onclick="toggleAnswer(this)">
+                What should I create?
+            </div>
+            
+            <div class="answer">
+                You can build whatever you dream of, whether that be a website with an amazing feature, a phone app, or a prototype! Our only rule is that all code and prototypes must be written and made during the hackathon itself. Feel free to use open-source libraries and APIs; companies attending may provide their own as well. Impress us!
+            </div>
+
+            <!--FAQ 5-->
+            <div class="question" onclick="toggleAnswer(this)">
+                What should I bring?
+            </div>
+            
+            <div class="answer">
+                Please bring a valid ID card for admission, a laptop, a charger, and a positive attitude! Additional recommended items are: a refillable water bottle, earphones, any desired peripherals, and some scratch paper for brainstorming. We will provide everything else!
+            </div>
+
+            <!--FAQ 6-->
+            <div class="question" onclick="toggleAnswer(this)">
+                IS NPHacks a virtual or in-person hackathon? What is the schedule like?
+            </div>
+            
+            <div class="answer">
+                VikingHacks 2025 is a one-day in-person event! When applying, please make sure you will be available all day on Saturday, February 22nd, 2025.
+            </div>
+
+            <!--FAQ 7-->
+            <div class="question" onclick="toggleAnswer(this)">
+                When do applications close?
+            </div>
+            
+            <div class="answer">
+                Applications will be announced at a later date.
+            </div>
+
+            <!--FAQ 8-->
+            <div class="question" onclick="toggleAnswer(this)">
+                When will application descisions be released?
+            </div>
+            
+            <div class="answer">
+                Applications will be announced at a later date.
+            </div>
+
+            <!--FAQ 9-->
+            <div class="question" onclick="toggleAnswer(this)">
+                Do i sign up as a team or individual?
+            </div>
+            
+            <div class="answer">
+                You will apply as an individual. We will be personally reviewing each application and accepting on an individual basis.
+            </div>
+
+            <!--FAQ 10-->
+            <div class="question" onclick="toggleAnswer(this)">
+                How will team formations work for admitted students?
+            </div>
+            
+            <div class="answer">
+                You will be able to note down your desired teammates in your application. There can be up to a maximum of 4 hackers on a team. If you are a solo hacker but want to be in a team, please mention so on your application so we can put you in a team.
+            </div>
+
+            <!--FAQ 11-->
+            <div class="question" onclick="toggleAnswer(this)">
+                What if I have no prior experience in programming, coding, or hackathons?
+            </div>
+            
+            <div class="answer">
+                Students of all skill levels are encouraged to attend, even if you've never programmed before. VikingHacks is beginner-friendly and we will host various workshops throughout the day that can help you get started.
+            </div>
+
+            <!--FAQ 12-->
+            <div class="question" onclick="toggleAnswer(this)">
+                Am I allowed to come with a project pre-built or will I be building the project from scratch?
+            </div>
+            
+            <div class="answer">
+                You will be building projects from scratch. You are encouraged brainstorm ideas of what you want to build; however, participants who begin creating projects before the hacking period begins will be immediately disqualified from the competition.
+            </div>
+
+            <!--FAQ 13-->
+            <div class="question" onclick="toggleAnswer(this)">
+                I have another question!
+            </div>
+            
+            <div class="answer">
+                Please email us at team@nphack.club if you have any additional questions! We look forward to hearing from you.
+            </div>
+        
         </div>
     </div>
 </body>

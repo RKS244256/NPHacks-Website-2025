@@ -1,6 +1,6 @@
 # Todo
 ## Sections
-- [ ] Landing Page - Landing Page
+- [ ] Landing Page - Pranay
 - [ ] Schedule - Yashvi
 - [ ] FAQ - Saransh
 - [ ] Sponsors - Gurshaan

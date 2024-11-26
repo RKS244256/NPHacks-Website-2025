@@ -16,6 +16,8 @@ body {
 .footer {
     display: flex;
     background-color: rgba(6, 82, 106, 1);
+    text-align: center;
+    justify-content: center;
 }
 
 .header {

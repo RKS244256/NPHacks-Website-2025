@@ -84,6 +84,12 @@ body {
     opacity: 0;
 }
 
+.schedule {
+    display: flex;
+    background: rgb(34, 23, 122);
+    flex-direction: column;
+}
+
 @keyframes fadeInTitle {
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }

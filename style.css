@@ -2,8 +2,14 @@ html {
     background-color: rgba(6, 82, 106, 1);
 }
 
-td, th, table {
-    border: 1px solid black;
+td {
+    border: 1px hidden;
+    border-radius: 10px;
+}
+
+.schedule_text {
+    margin-left: 5px;
+    color: black;
 }
 
 body {

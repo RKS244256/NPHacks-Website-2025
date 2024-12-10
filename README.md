@@ -1,10 +1,10 @@
 # Todo
 ## Sections
 
-- [ ] Landing Page - Pranay
-- [ ] Schedule - Yashvi
+- [X] Landing Page - Pranay
+- [X] Schedule 
 - [X] FAQ - Saransh
-- [ ] Sponsors - Gurshaan
+- [X] Sponsors - Gurshaan
 
 ## General
 - [ ] CSS

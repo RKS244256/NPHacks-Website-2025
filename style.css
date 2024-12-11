@@ -1,5 +1,6 @@
 html {
     background-color: rgba(6, 82, 106, 1);
+    font-family: Mulish;
 }
 
 td {
@@ -10,6 +11,7 @@ td {
 .schedule_text {
     margin-left: 5px;
     color: black;
+    font-size: 1.2em
 }
 
 body {
@@ -17,7 +19,6 @@ body {
     background: radial-gradient(circle, rgba(3, 3, 55, 1) 0%, rgba(15, 18, 70, 1) 40%, rgba(5, 88, 110, 1) 100%);
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
     color: #e0e0e0;
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -173,7 +174,6 @@ body {
 body {
     background: radial-gradient(circle, rgba(3, 3, 55, 1) 0%, rgba(15, 18, 70, 1) 40%, rgba(5, 88, 110, 1) 100%);
     color: #e0e0e0;
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }

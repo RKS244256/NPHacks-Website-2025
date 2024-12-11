@@ -31,6 +31,18 @@ body {
     justify-content: center;
 }
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 .header {
     position: absolute;
     top: 0;
@@ -69,9 +81,11 @@ body {
 .landing {
     /*background-color: #1c2d3f;*/
     position: relative;
+    animation: gradient 15s ease infinite;
     display: flex;
     background: rgb(0,19,133);
     background: linear-gradient(90deg, rgba(0,19,133,1) 0%, rgba(230,35,230,1) 100%); 
+    background-size: 200% 200%;
     width: 100%;
     min-height: 27%;
     align-content: center;

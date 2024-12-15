@@ -1,0 +1,17 @@
+/* Schedule Styling */
+td {
+    border: 1px hidden;
+    border-radius: 10px;
+}
+
+.schedule {
+    display: flex;
+    background: rgb(34, 23, 122);
+    flex-direction: column;
+}
+
+.schedule_text {
+    margin-left: 5px;
+    color: black;
+    font-size: 1.2em
+}

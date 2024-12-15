@@ -1,0 +1,50 @@
+/* donate page styling */
+.donate-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(10, 15, 30, 0.8);        
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.impact-item, .testimonial {
+    background-color: #2b2b2b;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+    .header_buttons {
+        width: 100px;
+        font-size: 1em;
+    }
+}
+.supporters-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.supporter-thanks {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.supporters-section h2 {
+    font-size: 2em;
+    color: #42a7f5;
+    margin-bottom: 15px;
+}
+
+.supporter-thanks p {
+    font-size: 1.1em;
+    color: #e0e0e0;
+}
+

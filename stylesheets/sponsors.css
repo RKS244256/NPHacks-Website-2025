@@ -1,0 +1,22 @@
+/* Sponsorship Styling */
+.sponsor_div { 
+    position: relative;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.sponsor_divs {
+    position: relative;
+    background: rgb(4,0,66);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    gap: 20px;
+}

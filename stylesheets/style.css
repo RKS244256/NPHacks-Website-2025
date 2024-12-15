@@ -1,0 +1,70 @@
+/* Template Page Styling */
+html {
+    background-color: rgba(6, 82, 106, 1);
+    font-family: Mulish;
+}
+
+body {
+    background: rgb(4,0,66);
+    background: radial-gradient(circle, rgba(3, 3, 55, 1) 0%, rgba(15, 18, 70, 1) 40%, rgba(5, 88, 110, 1) 100%);
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Nav Bar Styling */
+
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(10, 15, 30, 0.8);
+    padding: 15px 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+    z-index: 10;
+    min-height: 2vh;
+}
+
+
+/* Button Styling */
+.header_buttons {
+    width: 140px;
+    height: 40px;
+    background-color: #1e5f8b;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: #f1f1f1;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header_buttons:hover {
+    transform: scale(1.1);
+    background-color: #3da9fc;
+}
+
+.large-button {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #63b9ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Footer Styling */
+.footer {
+    display: flex;
+    background-color: rgba(6, 82, 106, 1);
+    text-align: center;
+    justify-content: center;
+}

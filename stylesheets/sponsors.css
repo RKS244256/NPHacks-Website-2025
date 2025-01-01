@@ -1,5 +1,8 @@
 /* Sponsorship Styling */
-.sponsor_div { 
+.sponsor_primer { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     margin: 20px auto;
     max-width: 1200px;
@@ -16,7 +19,36 @@
 .button-container {
     display: flex;
     justify-content: center;
+    align-content: center;
     margin-top: 20px;
     padding-bottom: 20px;
-    gap: 20px;
+    gap: 50px;
+    margin-left: 1vw;
+    margin-right: 1vw;    
+}
+
+.sponsor_images {
+    display: flex;
+    align-content: center;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.sponsor_button {
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    width: 29vw;
+    max-height: 15vh;
+    font-size: 20px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+.sponsor_button:hover {
+    transform: scale(1.05);
 }

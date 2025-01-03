@@ -7,7 +7,8 @@
 - [X] Sponsors - Gurshaan
 
 ## General
-- [ ] CSS
+- [X] CSS
 - [ ] Registration Form
 - [ ] Donations?
 - [X] Sponsor Package Download (In Sponsor Section)
+- [ ] Mobile Optimization

@@ -10,8 +10,9 @@ body {
     margin: 0;
     padding: 0;
     color: #e0e0e0;
-    display: grid;
     grid-template-rows: auto 1fr auto;
+    width: 100%;
+    display: inline-block;
 }
 .main {
     display: flex;

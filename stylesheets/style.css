@@ -38,8 +38,8 @@ body {
 /* Header icon Styling */
 .header_logo {
     display: flex;
-    max-height: 6vh;
-    max-width: 5vh;
+    height: 6vh;
+    width: 100%;
     margin-right: auto;
 }
 

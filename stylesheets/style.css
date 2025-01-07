@@ -39,6 +39,7 @@ body {
 .header_logo {
     display: flex;
     max-height: 6vh;
+    max-width: 5vh;
     margin-right: auto;
 }
 

@@ -1,59 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate to NPHacks 2025</title>
-    <link rel="stylesheet" href="stylesheets\style.css">
-    <link rel="stylesheet" href="stylesheets\donate.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/donate.css">
 </head>
+
 <body>
-    <div class="main">
-        <div class="header" id="header">
-            <a href="login.html">
-                <button class="header_buttons">Login</button>
-            </a>
-            <a href="donate.html">
-                <button class="header_buttons">Donate</button>
-            </a>
+    <!-- Header Section -->
+    <header class="header">
+        <a href="donate.html">
+            <a href="linktoschoolcashonline" class="enhanced-donate-button">Donate</a>
+
+        </a>
+    </header>
+
+    <!-- Main Donate Section -->
+    <main class="donate-container">
+        <h1>Support NPHacks 2025</h1>
+        <p>
+            Thank you for considering a donation to NPHacks 2025! Your contributions help us fund resources, venue rentals,
+            prizes, and meals for participants. Every donation makes a big difference.
+        </p>
+
+      <!-- DONATING AMOUNTS -->
+        <button class="collapsible"> $10</button>
+        <div class="content">
+          <p>Provides half the supplies needed for one hacker to participate.</p>
+        </div>
+        <button class="collapsible">$20</button>
+        <div class="content">
+          <p>Provides supplies for one hacker, including tools and materials.</p>
+        </div>
+        <button class="collapsible">$50</button>
+        <div class="content">
+          <p>Supports a workshop or tutorial for a group of participants.</p>
+        </div>
+        <button class="collapsible">$100</button>
+        <div class="content">
+          <p>Covers meals for a team of hackers for the duration of the event.</p>
+        
+        <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
         </div>
 
-        <div class="donate-container">
-            <h1>Support NPHacks 2025</h1>
-            <p>Thank you for considering making a donation to NPHacks 2025! Funds raised go toward resources, venue rental, prizes, and food for our participants. Every single donation counts in contributing to our event's success. </p>
+        <!-- Donate Button -->
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL@example.com" />
+                <input type="hidden" name="no_recurring" value="0" />
+                <input type="hidden" name="item_name" value="NPHacks 2025 Donation" />
+                <input type="hidden" name="currency_code" value="CAD" />
+            </form>
+        </section>
 
-            <div class="impact-section">
-                <h2>How Your Donation Helps</h2>
-                <div class="impact-item">$20 provides supplies for one hacker.</div>
-                <div class="impact-item">$50 supports a workshop or tutorial.</div>
-                <div class="impact-item">$100 covers meals for a team.</div>
-                <div class="impact-item">Custom Amount: Any contribution helps us reach our goals.</div>
+        <!-- Supporters Section -->
+        <section class="supporters-section">
+            <h2>Thank You to Our Supporters</h2>
+            <p>
+                Your support ensures the success of NPHacks 2025. We greatly appreciate your contributions to this event!
+            </p>
+            <div class="supporter-thanks">
+                <p>
+                    Special thanks to all our donors for helping us create a platform where students can innovate and create.
+                </p>
             </div>
+        </section>
 
-            <div class="donate-button">
-                <form action="https://www.paypal.com/donate" method="post" target="_top">
-                    <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL@example.com" />
-                    <input type="hidden" name="no_recurring" value="0" />
-                    <input type="hidden" name="item_name" value="NPHacks 2025 Donation" />
-                    <input type="hidden" name="currency_code" value="CAD" />
-                    <button type="submit" class="header_buttons">Donate with PayPal</button>
-                </form>
-            </div>
-
-            <div class="supporters-section">
-                <h2>Thank You to Our Supporters</h2>
-                <p>Your support means the world to us! Whether it may be big or small, every donation will go toward making NPHacks 2025 a reality. We really appreciate your contribution to this event.</p>
-                <div class="supporter-thanks">
-                    <p>We would like to extend a special thanks to all our donors, past and present. Your generosity ensures continued success for NPHacks, and such an incredible platform where students can innovate and create.
-                    </p>
-                </div>
-            </div>
-
-            <div class="contact-info">
-                <p>If you have any questions about donating, please email us at <a href="mailto:placeholderemail.com" style="color: #42a7f5;">placeholderemail.com</a>.</p>
-            </div>
-        </div>
-    </div>
+        <!-- Contact Info -->
+        <footer class="contact-info">
+            <p>
+                <a>Questions? Email us at team@nphack.club</a>
+            </p>
+        </footer>
+    </main>
 
     <script src="script.js"></script>
 </body>
+
 </html>

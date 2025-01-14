@@ -79,3 +79,39 @@ body {
     text-align: center;
     justify-content: center;
 }
+/* Donate Button Styling */
+.donate-button {
+  position: fixed; /* Fixes the button to the top right */
+  top: 20px; /* Space from the top */
+  right: 20px; /* Space from the right */
+  background: linear-gradient(145deg, #1f3b73, #174b8a); /* Gradient background */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px; /* Fully rounded edges */
+  cursor: pointer;
+  text-decoration: none; /* Removes underline from the link */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Darker and softer shadow */
+  transform: scale(1); /* Initial scale */
+}
+
+/* Hover Effects */
+.donate-button:hover {
+  background: linear-gradient(145deg, #174b8a, #1f3b73); /* Inverted gradient on hover */
+  transform: scale(1.05); /* Slightly enlarge the button */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4); /* Larger shadow */
+}
+
+/* Active Button Effects (when clicked) */
+.donate-button:active {
+  transform: scale(0.98); /* Slight shrink when clicked */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Smaller shadow when clicked */
+}
+
+/* Add subtle text shadow for extra clarity */
+.donate-button {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}

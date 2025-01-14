@@ -1,50 +1,302 @@
-/* donate page styling */
+/* Collapsible Button Styling */
+.collapsible {
+    background-color: #1f3b73; /* Dark blue background */
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  /* Active or Hovered State */
+  .collapsible.active, .collapsible:hover {
+    background-color: #174b8a; /* Darker blue on hover or active */
+  }
+  
+  /* Plus/Minus Icon Styling */
+  .collapsible:after {
+    content: '\002B'; /* "+" symbol */
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    transition: transform 0.3s ease; /* Smooth transition for icon */
+  }
+  
+  /* Change "+" to "-" when active */
+  .collapsible.active:after {
+    content: "\2212"; /* "-" symbol */
+    transform: rotate(180deg); /* Rotates the icon when active */
+  }
+  
+  /* Content Section Styling */
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #2a446e; /* Lighter dark blue for content */
+    font-size: 14px; /* Adjust font size inside content */
+  }
+  
+  /* Optional: Ensures smooth display of content */
+  .content p {
+    margin: 10px 0; /* Adds space around paragraphs */
+  }
+
+  
+
+/* Donate Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #0a0f1e, #1b2735);
+    color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
 .donate-container {
     max-width: 800px;
     margin: 50px auto;
-    padding: 20px;
-    background-color: rgba(10, 15, 30, 0.8);        
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    background: linear-gradient(to right, rgba(10, 15, 30, 0.95), rgba(20, 25, 40, 0.95));
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-out;
 }
 
+.donate-container h1, .donate-container h2 {
+    text-align: center;
+    color: #42a7f5;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.donate-container p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
 
 .impact-item, .testimonial {
-    background-color: #2b2b2b;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 10px 0;
+    background: #2b2b2b;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-@media (max-width: 600px) {
-    .header_buttons {
-        width: 100px;
-        font-size: 1em;
-    }
+.impact-item:hover, .testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
 }
+
 .supporters-section {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #2b2b2b;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+    padding: 25px;
+    background: rgba(20, 25, 40, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.supporters-section h2 {
+    font-size: 2.2em;
+    color: #42a7f5;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
 .supporter-thanks {
     margin-top: 20px;
-    padding: 15px;
-    background-color: #333;
-    border-radius: 5px;
+    padding: 20px;
+    background: #333;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
 }
 
-.supporters-section h2 {
-    font-size: 2em;
-    color: #42a7f5;
-    margin-bottom: 15px;
+.supporter-thanks:hover {
+    background: #444;
 }
 
 .supporter-thanks p {
     font-size: 1.1em;
     color: #e0e0e0;
 }
+
+/* Add Button */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(to right, #42a7f5, #1e80c1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+/* Styles for Donate Button */
+.donate-button {
+    display: inline-block;
+    padding: 12px 20px; /* Adjust padding for better fit */
+    font-size: 1em; /* Ensure text size is readable */
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(to right, #42a7f5, #1e80c1);
+    border: none;
+    border-radius: 8px; /* Smooth button edges */
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none; /* Remove underline for link */
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/*  Donate Button */
+.enhanced-donate-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(to right, #ff6a00, #ff4500);
+    border-radius: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+/* Donation Boxes */
+.donation-section {
+    text-align: center;
+    margin: 20px 0;
+}
+/* Section Styling */
+.donation-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Buttons Styling */
+.donation-button {
+    background: linear-gradient(to right, #1e80c1, #42a7f5);
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.donation-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Hidden Content Styling */
+.donation-content {
+    display: none;
+    background: #f9f9f9;
+    color: #333;
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 400px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.donation-box {
+    background: linear-gradient(to right, #1e80c1, #42a7f5);
+    color: #fff;
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.donation-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Hidden Content */
+.donation-content {
+    display: none;
+    background: #f9f9f9;
+    color: #333;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.enhanced-donate-button:hover {
+    background: linear-gradient(to right, #ff4500, #ff6a00);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.donate-button:hover {
+    background: linear-gradient(to right, #1e80c1, #42a7f5);
+    transform: scale(1.05); /* Add slight zoom effect on hover */
+}
+
+.button:hover {
+    background: linear-gradient(to right, #1e80c1, #42a7f5);
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .donate-container {
+        padding: 20px;
+    }
+
+    .supporters-section {
+        padding: 20px;
+    }
+
+    .header_buttons {
+        width: 100px;
+        font-size: 1em;
+    }
+
+    .button {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
